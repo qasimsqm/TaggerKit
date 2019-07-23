@@ -22,7 +22,8 @@ public class TKCollectionView: UIViewController {
 	public var customCornerRadius 	  	: CGFloat?
 	public var customBackgroundColor 	: UIColor?
 	public var action 					: actionType?
-	
+    public var borderWidth              : CGFloat?
+    public var borderColor              : UIColor?
 	// MARK: - Class properties
 	
 	public var tagsCollectionView	: UICollectionView!

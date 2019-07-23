@@ -55,7 +55,8 @@ class ViewController: UIViewController {
 		// Set the sender and receiver of the TextField
 		addTagsTextField.sender 	= allTags
 		addTagsTextField.receiver 	= productTags
-		
+        productTags.borderWidth = 1
+        productTags.borderColor = UIColor.blue
 		add(productTags, toView: testContainer)
 		add(allTags, toView: searchContainer)
 	}

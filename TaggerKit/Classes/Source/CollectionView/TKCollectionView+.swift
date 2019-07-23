@@ -29,7 +29,8 @@ extension TKCollectionView: UICollectionViewDataSource {
 		cell.font			= customFont ?? defaultFont
 		cell.color			= customBackgroundColor ?? defaultBackgroundColor
 		cell.delegate		= self
-		
+        cell.borderWidth    = borderWidth ?? 0
+        cell.borderColor    = borderColor ?? UIColor.clear
 		return cell
 	}
 	

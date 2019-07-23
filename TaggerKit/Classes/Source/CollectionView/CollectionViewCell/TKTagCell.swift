@@ -21,7 +21,9 @@ class TKTagCell: UICollectionViewCell {
 	var color: UIColor? { didSet { backgroundColor = color } }
 	var cornerRadius: CGFloat? { didSet { layer.cornerRadius = cornerRadius! } }
 	var tagAction: actionType! { didSet { setupButton(action: tagAction) } }
-	
+	var borderWidth: CGFloat? { didSet { layer.borderWidth = borderWidth! } }
+    var borderColor: UIColor? { didSet { layer.borderColor = borderColor?.cgColor } }
+    
 	lazy var nameLabel: UILabel = {
 		let label 			= UILabel()
 		label.textColor 	= UIColor.darkGray
@@ -113,3 +115,4 @@ class TKTagCell: UICollectionViewCell {
 	}
 		
 }
+
