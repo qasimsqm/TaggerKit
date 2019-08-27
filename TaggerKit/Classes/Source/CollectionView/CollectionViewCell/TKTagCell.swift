@@ -23,10 +23,10 @@ class TKTagCell: UICollectionViewCell {
 	var tagAction: actionType! { didSet { setupButton(action: tagAction) } }
 	var borderWidth: CGFloat? { didSet { layer.borderWidth = borderWidth! } }
     var borderColor: UIColor? { didSet { layer.borderColor = borderColor?.cgColor } }
-    
+    var textColor: UIColor? { didSet { nameLabel.textColor = textColor } }
 	lazy var nameLabel: UILabel = {
 		let label 			= UILabel()
-		label.textColor 	= UIColor.white
+		label.textColor 	= textColor
 		label.textAlignment = .center
 		return label
 	}()

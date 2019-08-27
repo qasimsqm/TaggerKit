@@ -24,6 +24,7 @@ public class TKCollectionView: UIViewController {
 	public var action 					: actionType?
     public var borderWidth              : CGFloat?
     public var borderColor              : UIColor?
+    public var textColor                : UIColor?
 	// MARK: - Class properties
 	
 	public var tagsCollectionView	: UICollectionView!

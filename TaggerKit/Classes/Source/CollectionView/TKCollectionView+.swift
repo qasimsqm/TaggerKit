@@ -31,6 +31,7 @@ extension TKCollectionView: UICollectionViewDataSource {
 		cell.delegate		= self
         cell.borderWidth    = borderWidth ?? 0
         cell.borderColor    = borderColor ?? UIColor.clear
+        cell.textColor      = textColor
 		return cell
 	}
 	
